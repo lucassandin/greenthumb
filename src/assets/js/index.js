@@ -1,38 +1,33 @@
-"use strict";
-
-import plants from "../images/plants/*.jpg";
-import icons from "../images/icons/*.svg";
-
-function getImagePlants(name) {
-  return plants[name.split('/').pop().replace('.png', '')];
-}
-
 function getImgWater(name) {
   switch (name) {
     case "rarely":
-      return icons["1-drop"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/1-drop.svg`;
     case "regularly":
-      return icons["2-drops"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/2-drops.svg`;
     case "daily":
-      return icons["3-drops"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/3-drops.svg`;
     default:
-      return icons["1-drop"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/1-drop.svg`;
   }
 }
 
 function getImgPet(name) {
   switch (name) {
     case false:
-      return icons["pet"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/pet.svg`;
     case true:
-      return icons["toxic"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/toxic.svg`;
     default:
-      return icons["toxic"];
+      return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/toxic.svg`;
   }
 }
 
 function getImgSun(name) {
-  return icons[name];
+  return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/${name}.svg`;
+}
+
+function getImgFavorite(name) {
+  return `https://red-ventures.s3.us-east-2.amazonaws.com/images/icons/${name}.svg`;
 }
 
 function request(sun, water, dog) {
@@ -73,10 +68,10 @@ function loadRequest(res) {
     let h1 = document.createElement("h1");
     let p = document.createElement("p");
 
-    img0.setAttribute("src", icons["staff-favorite"]);
+    img0.setAttribute("src", getImgFavorite("staff-favorite"));
     img0.setAttribute("alt", "Favorite");
 
-    img1.setAttribute("src", getImagePlants(obj.url));
+    img1.setAttribute("src", obj.url);
     img1.setAttribute("alt", "plant");
 
     img2.setAttribute("src", getImgPet(obj.toxicity));
