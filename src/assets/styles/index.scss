@@ -1,0 +1,407 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+width: 100%;
+}
+
+body {
+font-family: "Montserrat", sans-serif;
+width: 1440px;
+margin: auto;
+}
+
+header {
+position: relative;
+height: 500px;
+background-color: #75BC97;
+}
+
+#left-leaves {
+width: 862px;
+height: 500px;
+position: absolute;
+left: 0;
+top: 0;
+}
+
+#greenthumb {
+width: 209px;
+height: 25px;
+position: absolute;
+top: 57px;
+left: 288px;
+}
+
+header > h1 {
+width: 400px;
+height: 252px;
+position: absolute;
+top: 124px;
+left: 288px;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 85px;
+color: #fff;
+}
+
+#arrow-down {
+width: 35px;
+height: 39px;
+position: absolute;
+top: 407px;
+left: 291px;
+color: #fff;
+}
+
+#plantperson {
+width: 335px;
+height: 428px;
+position: absolute;
+top: 36px;
+left: 800px;
+}
+
+#right-leaves {
+width: 361px;
+height: 500px;
+position: absolute;
+top: 0;
+left: 1079px;
+}
+
+#selects {
+position: relative;
+}
+
+#selects {
+width: 1440px;
+height: 299px;
+background-color: #fff;
+}
+
+#sunlight, #water, #dog {
+position: absolute;
+top: 57px;
+width: 219px;
+}
+
+#sunlight {
+left: 293px;
+}
+
+#water {
+left: 633px;
+}
+
+#dog {
+left: 953px;
+}
+
+#sunlight > label,
+#water > label,
+#dog > label {
+position: absolute;
+top: 90px;
+left: 0px;
+font-size: 14px;
+line-height: 22px;
+color: #848484;
+}
+
+#sunlight > select,
+#water > select,
+#dog > select {
+border-radius: 19px;
+width: 219px;
+height: 40px;
+border: solid 1px #A8A8A8;
+/*-moz-appearance: none;
+-webkit-appearance: none;
+appearance: none;*/
+font-size: inherit;
+font-family: inherit;
+color: #848484;
+background-color: transparent;
+position: absolute;
+top: 150px;
+left: 0px;
+padding: 0px 18px;
+}
+
+#sunlight > img {
+width: 75px;
+height: 75px;
+}
+
+#water > img {
+width: 103px;
+height: 75px;
+}
+
+#dog > img {
+width: 75px;
+height: 62px;
+}
+
+#section-error {
+position: relative;
+width: 1440px;
+height: 299px;
+background-color: #eee;
+}
+
+#section-error h1 {
+position: absolute;
+top: 57px;
+left: 293px;
+width: 442px;
+height: 54px;
+font-size: 45px;
+line-height: 55px;
+color: #A9A9A9;
+}
+
+#section-error p {
+position: absolute;
+top: 130px;
+left: 293px;
+width: 219px;
+height: 81px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 27px;
+color: #A9A9A9;
+}
+
+#section-error img {
+position: absolute;
+width: 104.7px;
+height: 203.27px;
+top: 57px;
+left: 842px;
+}
+
+#section-success {
+background-color: #eee;
+height: 1150px;
+position: relative;
+
+    img {
+    width: 158px;
+    position: absolute;
+    top: 37px;
+    left: 293px;
+    }
+
+    h1 {
+    width: 517px;
+    height: 66px;
+    position: absolute;
+    top: 135px;
+    left: 293px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67.05px;
+    color: #0C261C;
+    }
+
+    button {
+    cursor: pointer;
+    position: absolute;
+    width: 900px;
+    height: 50px;
+    left: calc(50% - 900px/2 + 13px);
+    top: calc(100% - 94px);
+    border-radius: 25px;
+    border: 1px solid #15573F;
+    color: #196146;
+    box-sizing: border-box;
+    }
+
+    button img {
+    width: 22px !important;
+    position: absolute;
+    left: calc(50% - 78px);
+    top: 10px;
+    }
+}
+
+.content {
+position: absolute;
+top: 230px;
+left: 293px;
+width: 1000px;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.mg-right {
+margin-right: 20px;
+}
+
+.mg-bottom {
+margin-bottom: 20px;
+}
+
+.col {
+width: 206px !important;
+height: 245px;
+border-radius: 5px;
+
+    .col-md {
+    width: 422px;
+    height: 490px;
+    }
+}
+
+.democlass {
+position: relative;
+top: 0;
+left: 0;
+background-color: #fff;
+
+    h1 {
+    color: #1E6B4E !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 28px !important;
+    position: absolute !important;
+    top: 175px !important;
+    left: 19px !important;
+    }
+
+    p {
+    width: 59px;
+    height: 28px;
+    color: #1E6B4E;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    position: absolute;
+    top: calc(50% - 28px/2 + 96.5px);
+    left: 19px;
+    }
+
+    img:nth-child(1) {
+    width: 200px !important;
+    height: 161px !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 2px !important;
+    border-radius: 5px !important;
+    }
+
+    img:nth-child(4) {
+    width: 22px !important;
+    height: 17px !important;
+    position: absolute !important;
+    top: 210px !important;
+    left: 114px !important;
+    background-color: transparent !important;
+    }
+
+    img:nth-child(5) {
+    width: 19px !important;
+    height: 19px !important;
+    position: absolute !important;
+    top: 208px !important;
+    left: 145px !important;
+    background-color: transparent !important;
+    }
+
+    img:nth-child(6) {
+    width: 16px !important;
+    height: 16px !important;
+    position: absolute !important;
+    top: 209px !important;
+    left: 171px !important;
+    background-color: transparent !important;
+    }
+}
+
+.favorite {
+width: 437px !important;
+height: 510px;
+margin-bottom: 20px;
+
+    h1 {
+    position: absolute !important;
+    top: calc(50% - 74px/2 + 190px) !important;
+
+    color: #1E6B4E !important;
+    font-weight: 700 !important;
+    line-height: 28px !important;
+    font-size: 35px !important;
+    line-height: 37px !important;
+    width: 10px !important;
+    }
+
+    p {
+    position: absolute;
+    height: 28px;
+    left: 83.52%;
+    right: 2.97%;
+    top: calc(50% - 28px/2 + 171px);
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+    img:nth-child(1) {
+    width: 150px !important;
+    height: 18px !important;
+    position: absolute !important;
+    top: 31px !important;
+    background: #75BC97 !important;
+    z-index: 1 !important;
+    border-radius: 0 20px 20px 0 !important;
+    padding: 15px;
+    left: 0 !important;
+    }
+
+    img:nth-child(2) {
+    width: 410px !important;
+    height: 353px !important;
+
+    position: absolute;
+    top: 39px !important;
+    left: 13px !important;
+    }
+
+    img:nth-child(5) {
+    width: 35px !important;
+    height: 26px !important;
+    background-color: transparent !important;
+
+    position: absolute !important;
+    left: 67.73% !important;
+    top: 89.41% !important;
+    }
+
+    img:nth-child(6) {
+    width: 29px !important;
+    height: 29px !important;
+    background-color: transparent !important;
+
+    position: absolute !important;
+    left: 78.49% !important;
+    top: 89.22% !important;
+    }
+
+    img:nth-child(7) {
+    width: 25px !important;
+    height: 25px !important;
+    background-color: transparent !important;
+
+    position: absolute !important;
+    left: 87.64% !important;
+    top: 89.41% !important;
+    }
+}

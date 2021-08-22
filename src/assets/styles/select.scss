@@ -1,0 +1,56 @@
+.custom-select {
+  position: absolute;
+  top: 150px;
+
+  font-family: Arial;
+  width: 219px;
+}
+
+.custom-select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color: transparent;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #A8A8A8 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #A8A8A8 transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  background-color: transparent;
+  border-radius: 19px;
+  border: solid 1px #A8A8A8;
+  font-size: inherit;
+  font-family: inherit;
+  color: #848484;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
