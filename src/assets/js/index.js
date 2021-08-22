@@ -181,7 +181,6 @@ for (i = 0; i < l; i++) {
             document.querySelector(".content").replaceChildren();
             loadRequest(res);
           }).catch(err => console.log("err > ", err));
-          debugger;
 
           break;
         }

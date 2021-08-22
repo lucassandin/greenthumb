@@ -367,12 +367,11 @@ margin-bottom: 20px;
     }
 
     img:nth-child(2) {
-    width: 410px !important;
-    height: 353px !important;
-
-    position: absolute;
+    width: calc(50% + 110px ) !important;
+    height: 330px !important;
+    position: absolute !important;
     top: 39px !important;
-    left: 13px !important;
+    left: calc(50% - 110px/2 - 110px) !important;
     }
 
     img:nth-child(5) {
